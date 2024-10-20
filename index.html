@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="short cut icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_ligne_E_Narbonne.png">
+    <!-- Link Css-->
+    <link rel="stylesheet" href="/Style/index.css" />
+    <link rel="stylesheet" href="/Style/header.css" />
+    <link rel="stylesheet" href="/Style/main.css" />
+    <!-- Link Boostrap start-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Link Boostrap end-->
+
+    <!-- Link animetion -->
+    <link rel="stylesheet" href="/cssanimation/cssanimation.min.css" />
+    <script src="/cssanimation/letteranimation.min.js"></script>
+    <!-- Other link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"
+    />
+    <link rel="stylesheet" href="/loaderpage/css/pageLoader.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="o-page-loader">
+      <div class="o-page-loader--content">
+        <div class="o-page-loader--spinner"></div>
+        <div class="o-page-loader--message">
+          <span>Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 position-relative">
+      <!--  Navbar   -->
+      <nav
+        class="bg-light animate__animated animate__backInDown animate__delay-3s"
+      >
+        <div class="container">
+          <div class="navbar p-0 navbar-expand-lg">
+            <div
+              class="collapse navbar-collapse justify-content-between bg-light"
+            >
+              <ul class="w-50 navbar-nav font-txt">
+                <li class="p-2 border-end">
+                  <i class="bi bi-geo-alt mx-1"></i>125 Main Street, Phnom Penh
+                </li>
+                <li class="p-2">
+                  <i class="bi bi-telephone mx-1"></i>+885 234 278 999
+                </li>
+              </ul>
+              <ul class="w-50 navbar-nav justify-content-end">
+                <li class="hover p-2 border-end position-relative">
+                  USD
+                  <i class="bi bi-chevron-down"></i>
+                  <p
+                    class="rounded-bottom-1 position-absolute ps-2 w-100 py-2 bg-light"
+                  >
+                    KHR
+                  </p>
+                </li>
+                <li class="hover p-2 border-end position-relative">
+                  ENGLAISH
+                  <i class="bi bi-chevron-down"></i>
+                  <p
+                    class="rounded-bottom-1 position-absolute ps-2 w-100 py-2 bg-light"
+                  >
+                    Khmer
+                  </p>
+                </li>
+                <li class="p-2 d-flex">
+                  <i class="px-1 bi bi-facebook"></i>
+                  <i class="px-1 bi bi-tiktok"></i>
+                  <i class="px-1 bi bi-instagram"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bottom nav -->
+          <div class="p-0 navbar navbar-expand-lg bg-light">
+            <!-- logo -->
+            <a href="" class="fs-3 navbar-brand px-3 logo-txt"
+              ><img src="/assets/icon/image/Logo.png" width="80px"
+            /></a>
+            <!-- Toggle menu -->
+            <div
+              class="d-block d-lg-none border-0 px-2 d-flex align-items-center"
+            >
+              <a href="" class="text-decoration-none">
+                <div class="d-flex text-dark">
+                  <i class="bi bi-cart-plus-fill fs-5"></i>
+                  <div class="m-1" style="font-size: 14px">
+                    <span class="font-txt">$100.00</span>
+                  </div>
+                </div>
+              </a>
+              <button
+                class="btn shadow-none p-0 border-0"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menu"
+              >
+                <i class="bi bi-list fs-2"></i>
+              </button>
+            </div>
+            <div class="w-50 collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav">
+                <form class="d-flex border-end pe-2" role="search">
+                  <div class="d-flex">
+                    <input
+                      class="form-control my-3 me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="my-3 btn btn-outline-success" type="submit">
+                      Search
+                    </button>
+                  </div>
+                </form>
+                <li class="p-2 pt-3 d-flex">
+                  <i class="bi bi-cart-plus-fill fs-5"></i>
+                  <div class="mx-2">
+                    <span class="font-txt">Cart</span><br />
+                    <span class="font-txt">$100.00</span>
+                  </div>
+                </li>
+                <li class="p-2 pt-3 d-flex">
+                  <i class="bi bi-person-fill fs-5"></i>
+                  <div class="mx-2">
+                    <span class="font-txt">User</span><br />
+                    <span class="font-txt">Account</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="buttom-nav d-none d-lg-block">
+          <div
+            class="container navbar navbar-expand-lg p-0 py-3 font-txt d-flex justify-content-between"
+          >
+            <ul class="navbar-nav">
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >All Categor</a
+                >
+              </li>
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >Products</a
+                >
+              </li>
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >Blogs</a
+                >
+              </li>
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >Limit Sale</a
+                >
+              </li>
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >Best Seller</a
+                >
+              </li>
+              <li class="px-3">
+                <a href="#" class="text-light text-hover nav-link py-1"
+                  >New Arribals</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <marquee behavior="" direction="" class="bg-light-subtle font-txt py-1">
+        🎊 Get the best deals today!
+        <span class="text-success"> 📣 Limted-time promotion!</span> Don't miss
+        out no amazing discounts!
+      </marquee>
+      <!-- End Navbar -->
+
+      <!--  Offcanvas   -->
+      <div class="offcanvas offcanvas-start d-lg-none" id="menu">
+        <!-- Offcanvas button  -->
+        <div class="offcanvas-header border-bottom">
+          <a href="" class="fs-3 navbar-brand px-3 logo-txt"
+            ><img src="/assets/icon/image/Logo.png" width="80px"
+          /></a>
+          <button
+            class="btn-close shadow-none border-0"
+            data-bs-dismiss="offcanvas"
+            data-bs-target-="#menu"
+          ></button>
+        </div>
+        <!-- offcanvas body  -->
+        <div class="offcanvas-body">
+          <!-- menu top  -->
+          <div class="border-bottom d-flex justify-content-between">
+            <ul class="navbar-nav col-6">
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >All Category</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav col-6">
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >Limit Sale</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >Best Seller</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link font-txt" style="font-size: 15px"
+                  >New Arrival</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- end menu top -->
+          <!-- form search -->
+          <form class="mt-4 d-flex justify-content-between pb-3">
+            <div class="d-flex align-items-center border w-100 px-2">
+              <i class="bi bi-search-heart"></i>
+              <input
+                type="text"
+                class="form-control shadow-none rounded-0 border-0"
+                placeholder="Search-----"
+              />
+            </div>
+          </form>
+          <!-- end form search -->
+          <!-- Social icon  -->
+          <div>
+            <ul class="list-unstyled">
+              <a href="" class="nav-link">
+                <li class="py-2" style="font-size: 15px">
+                  <i class="px-1 bi bi-facebook"></i>
+                  <span>Facebook</span>
+                </li>
+              </a>
+              <a href="" class="nav-link">
+                <li class="py-2" style="font-size: 15px">
+                  <i class="px-1 bi bi-tiktok"></i>
+                  <span>TikTok</span>
+                </li>
+              </a>
+              <a href="" class="nav-link">
+                <li class="py-2" style="font-size: 15px">
+                  <i class="px-1 bi bi-instagram"></i>
+                  <span>Instagram</span>
+                </li>
+              </a>
+            </ul>
+            <div class="dropdown mt-3">
+              <button
+                style="font-size: 15px"
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person"></i>User Account
+              </button>
+              <ul class="dropdown-menu p-0">
+                <li><a href="#" class="dropdown-item p-2 px-3">Sign In</a></li>
+                <li><a href="#" class="dropdown-item p-2 px-3">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Social icon -->
+        </div>
+      </div>
+      <!--  End Offcanvas   -->
+
+      <!-- main container  -->
+      <main class="container">
+        <!-- Banner -->
+        <div style="height: 70vh" class="position-relative mt-2">
+          <div
+            class="acticle col-md-5 p-5 position-absolute z-2 top-50 translate-middle-y"
+          >
+            <h1
+              class="font-txt text-light fw-bold cssanimation leMagnify sequence"
+            >
+              Your One-Shop Electronic Market
+            </h1>
+            <span class="font-txt text-light fw-bold">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              in dignissimos rerum repellendus! Ratione quisquam cumque, quasi
+              ex rem enim?
+            </span>
+            <br />
+            <button class="btn buttom-nav mt-2">
+              Shop Now<i class="bi bi-bag-check-fill p-2"></i>
+            </button>
+          </div>
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide h-100"
+            data-bs-ride="carousel"
+          >
+            <!-- Slide photo -->
+            <div class="carousel-inner h-100 rounded-4">
+              <div class="carousel-item active h-100">
+                <img
+                  src="/assets/icon/image/banner1.avif"
+                  class="d-block w-100 brightness h-100 object-fit-cover"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="/assets/icon/image/banner2.avif"
+                  class="d-block w-100 brightness h-100 object-fit-cover"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="/assets/icon/image/banner3.avif"
+                  class="d-block w-100 brightness h-100 object-fit-cover"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- End Slide photo -->
+          </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- About Shop  -->
+        <div
+          class="row my-4 justify-content-center justify-content-md-between"
+          data-aos="fade-down"
+        >
+          <!-- Responsive -->
+          <div class="col-11 col-md-6 col-lg-3 p-3 d-flex align-items-center">
+            <div>
+              <i class="bi bi-person-rolodex fs-1"></i>
+            </div>
+            <div class="mx-2">
+              <h6 class="m-0 font-txt">Responsive</h6>
+              <span class="text-secondary font-txt"
+                >Customer service Available 24/7</span
+              >
+            </div>
+          </div>
+          <!-- Secure -->
+          <div class="col-11 col-md-6 col-lg-3 p-3 d-flex align-items-center">
+            <div>
+              <i class="bi bi-shield-check fs-1"></i>
+            </div>
+            <div class="mx-2">
+              <h6 class="m-0 font-txt">Secure</h6>
+              <span class="text-secondary font-txt"
+                >Customer service Available 24/7</span
+              >
+            </div>
+          </div>
+          <!-- Shipping -->
+          <div class="col-11 col-md-6 col-lg-3 p-3 d-flex align-items-center">
+            <div>
+              <i class="bi bi-truck fs-1"></i>
+            </div>
+            <div class="mx-2">
+              <h6 class="m-0 font-txt">Shipping</h6>
+              <span class="text-secondary font-txt"
+                >Customer service Available 24/7</span
+              >
+            </div>
+          </div>
+          <!-- Transparent -->
+          <div class="col-11 col-md-6 col-lg-3 p-3 d-flex align-items-center">
+            <div>
+              <i class="bi bi-transparency fs-1"></i>
+            </div>
+            <div class="mx-2">
+              <h6 class="m-0 font-txt">Transparent</h6>
+              <span class="text-secondary font-txt"
+                >Customer service Available 24/7</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End About Shop  -->
+
+        <!-- Feature Product -->
+        <div class="container p-0">
+          <h1 class="font-txt cssanimation leWaterWave sequence">
+            Featured Products
+          </h1>
+          <div
+            class="scrollbar d-flex justify-content-start pb-2 px-lg-3 overflow-x-scroll"
+            data-aos="zoom-in-down"
+          >
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+              <div class="card border-0 overflow-hidden p-2">
+                <div class="image position-relative">
+                  <img
+                    src="/assets/icon/image/img1.png"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                  <div
+                    class="btn-shop position-absolute d-flex justify-content-center w-100"
+                  >
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-cart-plus"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-heart"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0 font-txt">
+                  <div class="item-title mt-2">
+                    <span class="fw-bold"> Iphone 12pro max. </span>
+                  </div>
+                  <div class="rate">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>(50)</span>
+                  </div>
+                  <div class="price font-txt fw-bold mt-3">
+                    <span>$690.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+              <div class="card border-0 overflow-hidden p-2">
+                <div class="image position-relative">
+                  <img
+                    src="/assets/icon/image/img2.png"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                  <div
+                    class="btn-shop position-absolute d-flex justify-content-center w-100"
+                  >
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-cart-plus"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-heart"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0 font-txt">
+                  <div class="item-title mt-2">
+                    <span class="fw-bold"> This is Iphone 12. </span>
+                  </div>
+                  <div class="rate">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>(50)</span>
+                  </div>
+                  <div class="price font-txt fw-bold mt-3">
+                    <span>$500.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+              <div class="card border-0 overflow-hidden p-2">
+                <div class="image position-relative">
+                  <img
+                    src="/assets/icon/image/img3.png"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                  <div
+                    class="btn-shop position-absolute d-flex justify-content-center w-100"
+                  >
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-cart-plus"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-heart"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0 font-txt">
+                  <div class="item-title mt-2">
+                    <span class="fw-bold"> Iphone 12pro max dark. </span>
+                  </div>
+                  <div class="rate">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>(50)</span>
+                  </div>
+                  <div class="price font-txt fw-bold mt-3">
+                    <span>$800.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+              <div class="card border-0 overflow-hidden p-2">
+                <div class="image position-relative">
+                  <img
+                    src="/assets/icon/image/img4.png"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                  <div
+                    class="btn-shop position-absolute d-flex justify-content-center w-100"
+                  >
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-cart-plus"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-heart"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0 font-txt">
+                  <div class="item-title mt-2">
+                    <span class="fw-bold"> This is Iphone 12. </span>
+                  </div>
+                  <div class="rate">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>(50)</span>
+                  </div>
+                  <div class="price font-txt fw-bold mt-3">
+                    <span>$510.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+              <div class="card border-0 overflow-hidden p-2">
+                <div class="image position-relative">
+                  <img
+                    src="/assets/icon/image/img5-removebg-preview.png"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                  <div
+                    class="btn-shop position-absolute d-flex justify-content-center w-100"
+                  >
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-cart-plus"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-heart"></i>
+                    </button>
+                    <button
+                      class="btn btn-light border-cadetblue rounded-circle mx-1"
+                    >
+                      <i class="fw-bold bi bi-share"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body p-0 font-txt">
+                  <div class="item-title mt-2">
+                    <span class="fw-bold"> Iphone 13pro max. </span>
+                  </div>
+                  <div class="rate">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>(50)</span>
+                  </div>
+                  <div class="price font-txt fw-bold mt-3">
+                    <span>$1200.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Feature Product -->
+
+          <!-- content-promotion -->
+          <div class="row m-0 my-3 justify-content-between">
+            <div class="col-md-12 my-2 col-lg-7">
+              <div class="shipping rounded-4 font-txt" data-aos="zoom-in-right">
+                <div class="col-md-6 p-3 p-md-5">
+                  <h2>Free Shipping Everywhere!</h2>
+                  <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis, magnam. </span
+                  ><br />
+                  <button class="btn bg-text-cade mt-3">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 my-2 col-lg-5">
+              <div class="event rounded-4 font-txt" data-aos="zoom-in-left">
+                <div class="col-md-6 col-lg-8 p-3 p-md-5">
+                  <h2>Black Friday Clearance</h2>
+                  <span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing. </span
+                  ><br />
+                  <button class="btn bg-text-cade mt-3">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end content-promotion -->
+          <!-- New Product -->
+          <div class="container p-0">
+            <h1 class="font-txt mt-4">New Product</h1>
+            <div
+              class="scrollbar d-flex justify-content-start pb-2 px-lg-3 overflow-x-scroll"
+              data-aos="zoom-in-down"
+            >
+              <!-- Card1 -->
+              <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+                <div class="card border-0 overflow-hidden p-2">
+                  <div class="image position-relative">
+                    <img
+                      src="/assets/icon/image/ipod1.png"
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                    <div
+                      class="btn-shop position-absolute d-flex justify-content-center w-100"
+                    >
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-cart-plus"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-heart"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-share"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 font-txt">
+                    <div class="item-title mt-2">
+                      <span class="fw-bold"> Ipod pro 2 and head phone. </span>
+                    </div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span>(50)</span>
+                    </div>
+                    <div class="price font-txt fw-bold mt-3">
+                      <span>$200.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card1 -->
+              <!-- Card2 -->
+              <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+                <div class="card border-0 overflow-hidden p-2">
+                  <div class="image position-relative">
+                    <img
+                      src="/assets/icon/image/mornitor.webp"
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                    <div
+                      class="btn-shop position-absolute d-flex justify-content-center w-100"
+                    >
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-cart-plus"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-heart"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-share"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 font-txt">
+                    <div class="item-title mt-2">
+                      <span class="fw-bold">
+                        This is monitor for everyone.
+                      </span>
+                    </div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span>(50)</span>
+                    </div>
+                    <div class="price font-txt fw-bold mt-3">
+                      <span>$350.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card2 -->
+              <!-- Card3 -->
+              <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+                <div class="card border-0 overflow-hidden p-2">
+                  <div class="image position-relative">
+                    <img
+                      src="/assets/icon/image/pc1.png"
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                    <div
+                      class="btn-shop position-absolute d-flex justify-content-center w-100"
+                    >
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-cart-plus"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-heart"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-share"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 font-txt">
+                    <div class="item-title mt-2">
+                      <span class="fw-bold"> This is macbook laptop. </span>
+                    </div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span>(50)</span>
+                    </div>
+                    <div class="price font-txt fw-bold mt-3">
+                      <span>$1000.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card3 -->
+              <!-- Card4 -->
+              <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+                <div class="card border-0 overflow-hidden p-2">
+                  <div class="image position-relative">
+                    <img
+                      src="/assets/icon/image/pc2.png"
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                    <div
+                      class="btn-shop position-absolute d-flex justify-content-center w-100"
+                    >
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-cart-plus"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-heart"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-share"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 font-txt">
+                    <div class="item-title mt-2">
+                      <span class="fw-bold"> The macbook for everyone. </span>
+                    </div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span>(50)</span>
+                    </div>
+                    <div class="price font-txt fw-bold mt-3">
+                      <span>$1200.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card4 -->
+              <!-- Card5 -->
+              <div class="col-6 col-md-3 col-lg-2 me-2 me-md-3 me-lg-3 me-xl-5">
+                <div class="card border-0 overflow-hidden p-2">
+                  <div class="image position-relative">
+                    <img
+                      src="/assets/icon/image/ipod.png"
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                    <div
+                      class="btn-shop position-absolute d-flex justify-content-center w-100"
+                    >
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-cart-plus"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-heart"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border-cadetblue rounded-circle mx-1"
+                      >
+                        <i class="fw-bold bi bi-share"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 font-txt">
+                    <div class="item-title mt-2">
+                      <span class="fw-bold"> This is Ipod pro 2 2024. </span>
+                    </div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span>(50)</span>
+                    </div>
+                    <div class="price font-txt fw-bold mt-3">
+                      <span>$250.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card5 -->
+            </div>
+            <!-- End New Product -->
+
+            <div class="gatget container-fluid my-5 rounded-5">
+              <div class="p-3 p-md-5 font-txt pt-5">
+                <h2>Get Up-to-Date</h2>
+                <h2>Gadget Technology</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                <br />
+                <button class="btn bg-text-cade mt-3">Shop Now</button>
+              </div>
+            </div>
+
+            <!-- Tech Talk -->
+            <div class="container mt-3 py-3">
+              <div class="row m-0">
+                <div class="col-lg-7">
+                  <h1 class="font-txt fw-bold">Tech Talk</h1>
+                  <span class="font-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt, dolores!
+                  </span>
+                  <div
+                    class="rounded-3 overflow-hidden my-3"
+                    style="height: 230px"
+                    data-aos="zoom-in-down"
+                  >
+                    <img
+                      src="https://media.sketchfab.com/models/2d86dd3e18a44cc080f85a0e1af9ffe9/thumbnails/79160ec3dd024d769bace0f096761370/1024x576.jpeg"
+                      alt=""
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <h2 class="font-txt fw-bold">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </h2>
+                  <span class="font-txt text-light-emphasis">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatum iste tempora voluptas saepe earum.
+                  </span>
+                  <div class="d-flex align-items-center font-txt mt-2">
+                    <button class="btn bg-text-cade me-3">Gadgets</button>
+                    <span class="text-light-emphasis"
+                      >Domain Growth &ensp; | &ensp;</span
+                    >
+                    <span class="text-light-emphasis">10 Oct, 2024</span>
+                  </div>
+                </div>
+                <div class="col-lg-5 border-top mt-4 mt-lg-0">
+                  <div class="table table-bordered">
+                    <!-- Start review -->
+                    <div class="font-txt border-bottom py-3">
+                      <h4 class="fw-bold my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam, sequi.
+                      </h4>
+                      <button class="btn bg-text-cade me-3">Review</button>
+                      <span class="text-light-emphasis">10 Oct, 2024</span>
+                    </div>
+                    <!-- End review -->
+
+                    <!-- Start tips -->
+                    <div class="font-txt border-bottom py-3">
+                      <h4 class="fw-bold my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam, sequi.
+                      </h4>
+                      <button class="btn bg-text-cade me-3">Tips</button>
+                      <span class="text-light-emphasis">10 Oct, 2024</span>
+                    </div>
+                    <!-- End tips -->
+
+                    <!-- Start trends -->
+                    <div class="font-txt border-bottom py-3">
+                      <h4 class="fw-bold my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam, sequi.
+                      </h4>
+                      <button class="btn bg-text-cade me-3">Trends</button>
+                      <span class="text-light-emphasis">10 Oct, 2024</span>
+                    </div>
+                    <!-- End trends -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row my-4 justify-content-center justify-content-md-between"
+              data-aos="zoom-in-up"
+            >
+              <div class="col-6 col-lg-3 p-3 d-flex align-items-center">
+                <div class="w-100 px-2 p-md-5">
+                  <img
+                    src="/assets/icon/image/Iphone-logo.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 p-3 d-flex align-items-center">
+                <div class="w-100 px-2 p-md-5">
+                  <img
+                    src="/assets/icon/image/samsung-logo.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 p-3 d-flex align-items-center">
+                <div class="w-100 px-2 p-md-5">
+                  <img
+                    src="/assets/icon/image/Ai-logo.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 p-3 d-flex align-items-center">
+                <div class="w-100 px-2 p-md-5">
+                  <img
+                    src="/assets/icon/image/amazone-logo.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tech Talk -->
+      </main>
+      <!-- end main container  -->
+
+      <!-- Start Footer -->
+      <footer>
+        <div class="bg-dark py-5 pt-2">
+          <div class="container">
+            <div class="col-lg-10 m-auto px-md-5 pt-4 text-center py-3">
+              <h1 class="font-txt text-light">Subcribe to get our updates</h1>
+              <form action="" class="d-flex mt-3">
+                <input
+                  type="text"
+                  class="form-control p-3 shadow-none border-0"
+                  placeholder="Enter your email address..."
+                />
+                <button class="btn bg-text-cade ms-2 px-4 fw-bold">
+                  Subcribe
+                </button>
+              </form>
+            </div>
+            <div class="row m-0 mt-4 pt-4">
+              <div class="col-6 col-lg-3">
+                <h4 class="font-txt text-light">Contact Us</h4>
+                <ul class="navbar-nav mt-3 mb-5">
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    <i class="bi bi-telephone me-1"></i>
+                    (+885) 980-134
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    <i class="bi bi-envelope me-1"></i>
+                    eshop@gmail.com
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    <i class="bi bi-geo-alt me-1"></i>
+                    125 Main Street, Phnom Penh
+                  </a>
+                </ul>
+                <img src="/assets/icon/image/Logo.png" alt="" width="90px" />
+              </div>
+              <!-- Start Supports -->
+              <div class="col-6 col-lg-3">
+                <h5 class="font-txt text-light">Supports</h5>
+                <ul class="navbar-nav mt-3 mb-5">
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Privacy Policy
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Return Policy
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Help Center
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Store Locatiors
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Careers
+                  </a>
+                </ul>
+              </div>
+              <!-- End Supports -->
+
+              <!-- Start Categories -->
+              <div class="col-6 col-lg-3">
+                <h5 class="font-txt text-light">Categories</h5>
+                <ul class="navbar-nav mt-3 mb-5">
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Campusters & Tablets
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                  >
+                    Mobile Phones & Accessories
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    TV & Home Theater
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    Audi & Headphones
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    Cameras & Camcorders
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    Gaming Equioment
+                  </a>
+                  <a
+                    href=""
+                    class="font-txt text-decoration-none text-secondary"
+                    style="font-size: 14px"
+                  >
+                    Home Appliances
+                  </a>
+                </ul>
+              </div>
+              <!-- End Categories -->
+
+              <!-- Start Payments -->
+              <div class="col-6 col-lg-3">
+                <h5 class="font-txt text-light">Payment</h5>
+                <ul class="navbar-nav">
+                  <li class="mb-2">
+                    <a href="" class="font-txt text-decoration-none text-light">
+                      <img
+                        src="/assets/icon/image/payment.png"
+                        alt=""
+                        width="60%"
+                        class="mb-2"
+                      />
+                    </a>
+                  </li>
+                </ul>
+                <h4 class="font-txt text-light">Follow Us</h4>
+                <ul class="navbar-nav">
+                  <li class="mb-2">
+                    <a
+                      href=""
+                      class="font-txt text-decoration-none text-secondary"
+                    >
+                      TikTok
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href=""
+                      class="font-txt text-decoration-none text-secondary"
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href=""
+                      class="font-txt text-decoration-none text-secondary"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Payments -->
+            </div>
+            <!-- Start Copyright -->
+            <div class="row m-0 border-top border-secondary py-2">
+              <div class="col-md-6 text-center text-md-start">
+                <span class="font-txt text-secondary"
+                  >Copyright ©2023 E-shop All Rights Reserved</span
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <span class="font-txt text-secondary"
+                  >Privacy Policy | Term & Condition | SeeMap</span
+                >
+              </div>
+            </div>
+            <!-- End Copyright -->
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </body>
+  <!-- Javascript -->
+  <script
+    type="application/javascript"
+    src="/loaderpage/js/pageLoader.js"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

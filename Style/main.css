@@ -1,0 +1,123 @@
+.brightness {
+  filter: brightness(60%);
+}
+
+@media (max-width: 576px) {
+  .brightness {
+    filter: brightness(30%);
+  }
+}
+/* ======================= Product card ============================== */
+.card .image {
+  height: 200px;
+}
+/* text-limit */
+.card .card-body .item-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.card:hover .card-body .item-title {
+  color: cadetblue;
+  text-decoration: underline;
+}
+.card .card-body .rate {
+  font-size: 12px;
+}
+/* Scroll bar design */
+.overflow-x-scroll::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.overflow-x-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overflow-x-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(240, 72, 6);
+  border-radius: 1rem;
+  border: 0.1rem solid transparent;
+}
+
+/* --------------- Hover to see btn shop  -------------------- */
+.btn-shop {
+  bottom: 0;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.border-cadetblue {
+  border: 1px solid cadetblue !important;
+}
+.btn-shop button:hover {
+  border: 1px solid cadetblue !important;
+  color: white !important;
+  border: 1px solid red !important;
+}
+.card:hover .btn-shop {
+  bottom: 10%;
+  opacity: 100%;
+}
+
+/* --------------- content-promotion style ------------------- */
+.shipping,
+.event {
+  height: 350px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0070/7032/files/packing_20slip_1848x970.png?v=1715619259);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+}
+.event {
+  background-image: url(https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg);
+}
+
+/* .btn:hover{
+    transition: 0.5s ease-in-out;
+    background-color: rgb(51, 255, 0) !important;
+} */
+
+.b1,
+.gatget {
+  background-image: url(https://sony.scene7.com/is/image/sonyglobalsolutions/09-15?$large360ViewerImage$);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gatget {
+  background-image: url(https://w0.peakpx.com/wallpaper/657/49/HD-wallpaper-workspace-desk-flat-lay-ultra-computers-hardware-apple-white-pink-desk-table-background-device-work-technology-mouse-simple-pastel-keyboard-office-girly-notebook-feminine-workspace.jpg);
+  /* height: 65vh; */
+  background-attachment: fixed;
+}
+
+@media (max-width: 992px) {
+  .gatget {
+    height: 30vh;
+  }
+}
+@media (min-width: 992px) {
+  .gatget {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .shipping,
+  .event {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shipping,
+  .event {
+    height: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .shipping,
+  .event {
+    height: 350px;
+  }
+}
